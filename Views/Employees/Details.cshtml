@@ -1,0 +1,90 @@
+﻿@model AITS.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supervisor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOJ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cell)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cell)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.Deptname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.Deptname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation.Designation1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation.Designation1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
